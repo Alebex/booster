@@ -1,0 +1,227 @@
+@import "variables";
+@import "mixin";
+@import "other";
+
+// @include respond($wigth, 'mobile' or 'desktop'(default));
+
+/*==================================
+=            Navigation            =
+==================================*/
+.navigation {	
+	position: absolute;
+	z-index: 9999;
+	left: 0;
+	right: 0;
+	&__wrapper {
+		padding: 20px 0;
+		display: table;		
+	}
+	&__fix {
+		position: fixed !important;
+		background-color: $bg_color-a;
+	}
+	&__logo {
+		display: table-cell;
+		text-align: left;
+		vertical-align: middle;
+	}
+	&__nav {
+		text-align: right;
+		display: table-cell;
+		vertical-align: middle;
+	}	
+}
+//logo
+.logo {
+	&__img {
+		width: 70%;
+	}
+}
+//nav
+.nav {
+	&__list {
+	}
+	&__item {
+		float: left;
+		margin-right: 20px;
+		list-style-type: none;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__link {
+		font: $nav_font;
+		position: relative;
+		text-transform: uppercase;
+		color: #fff;
+		padding-bottom: 7px;
+		&:focus, &:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		&::after {
+			position: absolute;
+			z-index: 999;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			height: 2px;
+			margin: auto;
+			content: "";
+			opacity: 0;
+			background-color: lighten( $bg_color, 40% );
+		}
+		&:hover::after {
+			transition: all .3s;
+			opacity: 1;
+		}
+		@include respond(1200) {
+			font-size: 19px;
+		}
+		@include respond(992) {
+		}
+		@include respond(769) {
+		}
+		@include respond(480) {
+		}
+	}
+}
+//navigation slidebar
+.slidebar {
+	background-color: $bg_slidebar;
+	&__logo {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	&__list {
+		display: block;
+		padding-left: 0;
+	}
+	&__item {
+		list-style-type: none;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	&__link {
+		display: block;
+		font: $nav_font;
+		text-transform: uppercase;
+		color: #fff;
+		padding: 5px 0;
+		&:focus, &:hover {
+			color: #fff;
+			text-decoration: none;
+		}
+		&:hover {
+			background-color: #fff;
+			color: darken($bg_color, 20%);
+			transition: all .3s;
+		}
+	}
+}
+/*==============================
+=            Header            =
+==============================*/
+.header {
+	&__wrapper {
+		background: url(../img/header_bg.jpg) no-repeat center;
+		background-size: cover;
+		position: relative;
+		padding: 250px 0;
+		@include respond(1200) {
+			padding: 150px 0;
+		}
+		@include respond(992) {
+
+		}
+		@include respond(768) {
+
+		}
+		@include respond(480) {
+		}
+	}
+	&__paranja {
+		background-color: $bg_color_a;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	//title
+	&__content {
+		width: 100%;
+		display: table;
+		&_cell {
+			display: table-cell;
+			text-align: center;
+		}
+	}
+	//text
+	&__title {
+		font: $header_font;
+		color: #fff;
+		@include respond(1200) {
+			font-size: 60px;
+		}
+		@include respond(991) {
+			font-size: 45px;
+		}
+		@include respond(768) {
+			font-size: 40px;
+		}
+		@include respond(480) {
+			font-size: 25px;
+			line-height: 30px;
+			padding-bottom: 30px;
+		}
+
+	}
+	//button
+	&__btn {
+		border: 2px solid #fff;
+		padding: .8em;
+		border-radius: 50%;
+		font-size: 2em;
+		color: #fff;
+		@include respond(1200) {
+			font-size: 1.6em;
+		}
+		@include respond(480) {
+			font-size: 1.2em;
+		}
+		&:hover, &:focus {
+			background-color: #fff;
+			color: darken($bg_color, 20%);
+			transition: all .3s;
+		}
+	}
+	//slidebars
+	&__bars {
+		border: none;
+		background: none;
+		font-size: 40px;
+		outline: none;
+		color: #fff;
+		&:hover {
+			transform: scale(.95);
+			transition: all .3s;
+		}
+	}
+}
+/*================================
+=            About Us            =
+================================*/
+//text style
+.title {
+	font: $title_font;
+	text-align: center;
+}
+.text {
+	font: $text_font;
+	text-align: center;
+}
+.about {
+	padding: 0 0 50px 0;
+}
