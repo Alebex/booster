@@ -36,26 +36,26 @@
 <body>
 	<!-- Main Site content -->
 	<div id="sb-site">
-
 		<!--================================
 		=            Navigation            =
 		=================================-->
-		<div class="navigation clearfix">
+		<div id="navigation" class="navigation clearfix">
 			<div class="navigation__wrapper">
 				<div class="navigation__logo logo clearfix">
 					<a href="#header" class="navigation__link"><img src="img/logo.png" alt="Outsource-booster" class="logo__img"></a>
 				</div><!-- logo -->
 				<div class="navigation__nav nav clearfix">
 					<ul class="nav__list hidden-sm hidden-xs">
-						<li class="nav__item"><a href="" class="nav__link">About us</a></li>
-						<li class="nav__item"><a href="" class="nav__link">Services</a></li>
-						<li class="nav__item"><a href="" class="nav__link">Skills</a></li>
-						<li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+						<li class="nav__item"><a href="#about-us" class="nav__link">About us</a></li>
+						<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+						<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+						<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
 					</ul><!-- nav__list -->
 					<button class="header__bars hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></button>
 				</div><!-- navigation__nav -->
 			</div><!-- navigation__wrapper -->
 		</div><!-- navigation -->
+
 		
 		<!--============================
 		=            Header            =
@@ -69,7 +69,7 @@
 							<div class="header__content">
 								<div class="header__content_cell">
 									<p class="header__title">Trust us. We will boost your business.</p>
-									<a href="#" class="header__btn"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+									<a href="#about-us" class="header__btn"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
 								</div><!-- header__content_cell -->
 							</div><!-- header__content -->
 						</div><!-- col-lg-12 -->
@@ -84,7 +84,7 @@
 		<div id="about-us" class="about">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-xs-offset-3">
+					<div class="col-lg-6 col-lg-offset-3">
 						<p class="about__title title">About Us</p>
 					</div>
 				</div><!-- row -->
@@ -103,7 +103,7 @@
 		<div id="services" class="services">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-xs-offset-3">
+					<div class="col-lg-6 col-lg-offset-3">
 						<p class="services__title title">Services</p>
 					</div>
 				</div>
@@ -142,29 +142,59 @@
 					</div>
 					<div class="row">
 						<div class="col-lg-2 col-sm-offset-1">
-							<p class="skills__name">Java</p>
-							<p class="skills__name">Php</p>
-							<p class="skills__name">Scrum</p>
+							<div class="skills__container">
+								<p class="skills__name">Java</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">Php</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">Scrum</p>
+							</div>
 						</div>
 						<div class="col-lg-2">
-							<p class="skills__name">Scala</p>
-							<p class="skills__name">JavaScript</p>
-							<p class="skills__name">Q/A</p>
+							<div class="skills__container">
+								<p class="skills__name">Scala</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">Java Script</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">Q/A</p>
+							</div>
 						</div>
 						<div class="col-lg-2">
-							<p class="skills__name">Groovy</p>
-							<p class="skills__name">Databases</p>
-							<p class="skills__name">HTML</p>
+							<div class="skills__container">
+								<p class="skills__name">Groovy</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">Databases</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">HTML</p>
+							</div>
 						</div>
 						<div class="col-lg-2">
-							<p class="skills__name">Clojure</p>
-							<p class="skills__name">NoSql</p>
-							<p class="skills__name">Css</p>
+							<div class="skills__container">
+								<p class="skills__name">Clojure</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">NoSql</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">Css</p>
+							</div>
 						</div>
 						<div class="col-lg-2">
-							<p class="skills__name">C#</p>
-							<p class="skills__name">Agile</p>
-							<p class="skills__name">Jira</p>
+							<div class="skills__container">
+								<p class="skills__name">C#</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">Agile</p>
+							</div>
+							<div class="skills__container">
+								<p class="skills__name">Jira</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -182,10 +212,10 @@
 			<a href="#header" class="navigation__link"><img src="img/logo.png" alt="Outsource-booster" class="logo__img"></a>
 		</div><!-- logo -->
 		<ul class="slidebar__list">
-			<li class="slidebar__item"><a href="" class="slidebar__link">About us</a></li>
-			<li class="slidebar__item"><a href="" class="slidebar__link">Services</a></li>
-			<li class="slidebar__item"><a href="" class="slidebar__link">Skills</a></li>
-			<li class="slidebar__item"><a href="" class="slidebar__link">Contact</a></li>
+			<li class="slidebar__item"><a href="#about-us" class="slidebar__link">About us</a></li>
+			<li class="slidebar__item"><a href="#services" class="slidebar__link">Services</a></li>
+			<li class="slidebar__item"><a href="#skills" class="slidebar__link">Skills</a></li>
+			<li class="slidebar__item"><a href="#contact" class="slidebar__link">Contact</a></li>
 		</ul><!-- nav__list -->
 	</div>
 
