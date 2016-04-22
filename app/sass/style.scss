@@ -272,3 +272,36 @@
 		font-weight: 600;
 	}
 }
+
+/*==============================
+=            Skills            =
+==============================*/
+.skills {
+	&__wrapper {
+		background: url(../img/skills_bg.jpg) no-repeat center;
+		padding: 50px 0;
+		background-size: cover;
+		position: relative;
+	}
+	&__paranja {
+		background-color: transparentize($bg_color, .2);
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 0;
+	}
+	&__title {
+		color: #fff;
+	}
+	&__name {
+		color: #fff;
+		text-transform: uppercase;
+		font: $skills_font;
+		font-weight: 600;
+		padding: 10px;
+		// border: 1px solid #fff; 
+	}
+}
