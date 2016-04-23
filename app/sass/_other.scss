@@ -1,6 +1,38 @@
 body {
 	font: $other_fonts;
 }
-
-
-
+//text style
+.title {
+	font: $title_font;
+	text-align: center;
+	@include respond(1200) {
+		font-size: 55px;
+		margin-bottom: 25px;
+	}
+	@include respond(991) {
+		font-size: 50px;
+		margin-bottom: 15px;
+	}
+	@include respond(768) {
+		font-size: 45px;
+		margin-bottom: 5px;
+	}
+	@include respond(480) {
+		font-size: 40px;
+		margin-bottom: 0;
+	}
+}
+.text {
+	font: $text_font;
+	text-align: center;
+	@include respond(1200) {
+		font-size: 25px;
+	}
+	@include respond(991) {	}
+	@include respond(768) {
+		font-size: 20px;
+	}
+	@include respond(480) {
+		font-size: 18px;
+	}
+}

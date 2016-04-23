@@ -17,11 +17,19 @@ $(document).ready(function() {
 	});
 	
 	//navigation
-	$("#navigation, .header__content").on("click","a", function (event) {
+	$("#navigation, .header__content, .slidebar").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
-		top = $(id).offset().top - 141;
+		top = $(id).offset().top - 0;
 		$('body,html').animate({scrollTop: top}, 1500);
+	});
+
+	$(".navigation").autoHidingNavbar();
+
+	$('.fancybox').fancybox({
+		padding : 0,
+		openEffect  : 'elastic',
+		closeBtn: false
 	});
 
 });
@@ -34,13 +42,12 @@ $(window).resize(function() {
 $(window).resize();
 
 //add class
-var $menu = $(".navigation111");
+var $menu = $(".navigation");
 $(window).scroll(function(){
 	if ( $(this).scrollTop() > 650 ){
-		$menu.addClass("navigation__fix");
-	} else if($(this).scrollTop() <= 650 && $menu.hasClass("navigation__fix")) {
-		$menu.removeClass("navigation__fix");
+		$menu.addClass("navigation__bg");
+	} else if($(this).scrollTop() <= 650 && $menu.hasClass("navigation__bg")) {
+		$menu.removeClass("navigation__bg");
 	}
 });//scroll
-
 

@@ -24,8 +24,9 @@
     "html5shiv": "^3.7.3",
     "respond": "^1.4.2",
     "components-font-awesome": "^4.5.0",
-    "bootstrap-grid": "^3.3.6-beta.1",
-    "Slidebars": "^0.10.3"
+    "Slidebars": "^0.10.3",
+    "bootstrap-autohidingnavbar": "^1.0.5",
+    "fancybox": "^2.1.5"
   },
   "overrides": {
     "fancybox": {
@@ -45,6 +46,26 @@
         "./dist/slidebars.css",
         "./dist/slidebars.js"
       ]
+    },
+    "bootstrap-autohidingnavbar": {
+      "main": [
+        "./dist/jquery.bootstrap-autohidingnavbar.js"
+      ]
+    },
+    "carousel-3d": {
+      "main": [
+        "./dist/jquery.carousel-3d.js",
+        "./dist/styles/jquery.carousel-3d.default.css"
+      ]
+    },
+    "overrides": {
+      "fancybox": {
+        "main": [
+          "./source/jquery.fancybox.css",
+          "./source/jquery.fancybox.js",
+          "./source/jquery.fancybox.pack.js"
+        ]
+      }
     }
   }
 }
