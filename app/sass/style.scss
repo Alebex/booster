@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixin";
 @import "other";
+@import "popup";
 
 // @include respond($wigth, 'mobile' or 'desktop'(default));
 
@@ -10,7 +11,7 @@
 .navigation {	
 	position: absolute;
 	top: 0;
-	z-index: 9999;
+	z-index: 150;
 	margin: auto;
 	left: 0;
 	right: 0;
@@ -103,7 +104,7 @@
 			opacity: 1;
 		}
 		@include respond(1200) {
-			font-size: 19px;
+			font-size: 16px;
 		}
 		@include respond(992) {
 		}
@@ -119,7 +120,17 @@
 	&__logo {
 		text-align: center;
 		margin-bottom: 40px;
+		&_link {
+			padding: 30px 15px;
+			position: relative;
+		}
+		&_padd {
+			position: relative;
+			margin-top: 20px;
+			z-index: -1;
+		}
 	}
+	//navigation
 	&__list {
 		display: block;
 		padding-left: 0;
@@ -207,11 +218,13 @@
 	}
 	//button
 	&__btn {
-		border: 2px solid #fff;
-		padding: .8em;
-		border-radius: 50%;
-		font-size: 2em;
+		border: 3px solid rgba(255,255,255,.7);
+		padding: .8em 2em;
 		color: #fff;
+		background: linear-gradient(0deg, darken($bg_color, 30%), darken($bg_color, 15%));
+		border-radius: 2px;
+		font-size: 1.5em;
+		text-transform: uppercase;
 		@include respond(1200) {
 			font-size: 1.6em;
 		}
@@ -219,9 +232,14 @@
 			font-size: 1.2em;
 		}
 		&:hover, &:focus {
-			background-color: #fff;
-			color: darken($bg_color, 20%);
-			transition: all .3s;
+			text-decoration: none;
+			color: #fff;		
+		}
+		&:hover {
+			background: linear-gradient(0deg, darken($bg_color, 25%), darken($bg_color, 10%));
+		}
+		&:active {
+			background: linear-gradient(0deg, darken($bg_color, 15%), darken($bg_color, 30%));
 		}
 	}
 	//slidebars
@@ -466,6 +484,13 @@
 		margin-bottom: 7%;
 	}
 	&__img {
+		width: 100%;
+		@include respond(768) {
+			width: 50%;
+		}
+		@include respond(480) {
+			width: 80%;
+		}
 		&:hover {
 			transform: scale(1.01);
 			box-shadow: 4px 4px 15px rgba(0,0,0,.3);	
@@ -494,7 +519,7 @@
 		background-color: rgba($bg_color, .4);
 	}
 	&__title {
-		color: #fff;
+		color: #fff;	
 	}
 	//form
 	&__input, &__textarea, &__submit {
@@ -586,10 +611,17 @@
 		height: 200px;
 	}
 	
+
+	&__logo {
+		font-size: 30px;
+		@include respond(991) {
+			margin-top: 10px;
+		}
+	}
 	&__line {
 		width: 100%;
 		background-color: #fff;
-		margin-top: 20px;
+		margin-top: 10px;
 		height: 2px;
 	}
 	&__street {
@@ -597,7 +629,48 @@
 		color: #fff;
 	}
 	&__phone {
+		text-align: right;
 		float: right;
 		color: #fff;
 	}
 }
+/*==============================
+=            Footer            =
+==============================*/
+.footer {
+	background-color: darken($bg_color, 35%);
+	&__wrapper {
+		display: table;
+		width: 100%;
+		height: 70px;
+	}
+	&__line {
+		width: 100%;
+		display: block;
+		height: 5px;
+		background-color: lighten($bg_color, 30%);
+	}
+	//logo
+	&__logo {		
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&__link {
+		font-size: 30px;
+	}
+	//social
+	&__social {
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;		
+		@include respond(991) {
+			text-align: left;
+		}
+	}
+	//copyright
+	&__copy {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+

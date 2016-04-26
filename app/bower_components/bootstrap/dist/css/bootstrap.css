@@ -582,18 +582,18 @@ cite {
   border-bottom: 1px solid #eeeeee;
 }
 
-ul,
+/*ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
-}
+}*/
 
-ul ul,
+/*ul ul,
 ol ul,
 ul ol,
 ol ol {
   margin-bottom: 0;
-}
+}*/
 
 .list-unstyled {
   padding-left: 0;

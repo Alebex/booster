@@ -51,3 +51,17 @@ $(window).scroll(function(){
 	}
 });//scroll
 
+//Ajax form
+$("form").submit(function() {
+	$.ajax({
+		type: "POST",
+		url: "../mail.php",
+		data: $("form").serialize()
+	}).done(function() {
+		alert("Letter sent");
+		setTimeout(function() {
+			$.fancybox.close();
+		}, 1000);
+	});
+	return false;
+})

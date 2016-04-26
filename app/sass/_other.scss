@@ -36,3 +36,44 @@ body {
 		font-size: 18px;
 	}
 }
+.social {
+	padding: 0;
+	&__item {
+		display: inline-block;
+		list-style-type: none;
+		margin-right: 10px;
+	}
+	&__item:last-child {
+		margin-right: 0;
+	}
+	&__link {
+		font-size: 30px;
+		display: block;
+		&_linkedin {
+			color: lighten($bg_color, 5%);
+			&:hover {
+				transform: scale(1.1);
+				color: lighten($bg_color, 25%);
+				transition: all .3s;
+			}
+		}
+		&_github {
+			color: lighten(#000, 66%);
+			&:hover {
+				transform: scale(1.1);
+				color: lighten(#000, 85%);
+				transition: all .3s;
+			}
+		}
+	}	
+}
+.copy	{
+	&__text {
+		color: #fff;
+		font-size: 12px;
+		float: right;
+	}
+	&__logo {
+		color: lighten($bg_color, 5%);
+	}
+}

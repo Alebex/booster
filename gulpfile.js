@@ -131,4 +131,4 @@ gulp.task('default', ['watch', 'styles', 'bower', 'serve']);
 
 // 1. NODE_ENV=production gulp styles
 // 2. gulp build
-gulp.task('build', ['html', 'img']);
+gulp.task('build', ['html']); //, 'img'

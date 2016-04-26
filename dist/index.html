@@ -21,7 +21,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:700' rel='stylesheet' type='text/css'>
 	
-	<link rel="stylesheet" href="css/plugins.min.css">
+		<link rel="stylesheet" href="css/plugins.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -41,7 +41,7 @@
 						<li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
 						<li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
 						<li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-						<li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+						<li class="nav__item"><a href="#contact-us" class="nav__link">Contact</a></li>
 					</ul><!-- nav__list -->
 					<button class="header__bars hidden-lg hidden-md"><i class="fa fa-bars" aria-hidden="true"></i></button>
 				</div><!-- navigation__nav -->
@@ -204,10 +204,10 @@
 					</div>
 				</div><!-- row -->
 			</div><!-- container -->
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<!-- подпись title="Sample title 1" -->
-					<div class="col-lg-4">
+					<div class="col-sm-4">
 						<div class="portfolio__pic">
 							<a href="img/portfolio/big_app_1.jpg" class="portfolio__link clearfix fancybox" rel="portfolio"><img src="img/portfolio/small_app_1.png" alt="" class="portfolio__img"></a>
 						</div><!-- portfolio__pic -->
@@ -215,7 +215,7 @@
 							<a href="img/portfolio/big_ui_1.png" class="portfolio__link clearfix fancybox" rel="portfolio"><img src="img/portfolio/small_ui_1.png" alt="" class="portfolio__img"></a>
 						</div><!-- portfolio__pic -->
 					</div><!-- col-lg-4 -->
-					<div class="col-lg-4">
+					<div class="col-sm-4">
 						<div class="portfolio__pic">
 							<a href="img/portfolio/big_app_2.jpg" class="portfolio__link clearfix fancybox" rel="portfolio"><img src="img/portfolio/small_app_2.png" alt="" class="portfolio__img"></a>
 						</div><!-- portfolio__pic -->
@@ -223,7 +223,7 @@
 							<a href="img/portfolio/big_ui_2.png" class="portfolio__link clearfix fancybox" rel="portfolio"><img src="img/portfolio/small_ui_2.png" alt="" class="portfolio__img"></a>
 						</div><!-- portfolio__pic -->
 					</div><!-- col-lg-4 -->
-					<div class="col-lg-4">
+					<div class="col-sm-4">
 						<div class="portfolio__pic">
 							<a href="img/portfolio/big_app_3.jpg" class="portfolio__link clearfix fancybox" rel="portfolio"><img src="img/portfolio/small_app_3.png" alt="" class="portfolio__img"></a>
 						</div><!-- portfolio__pic -->
@@ -235,7 +235,107 @@
 			</div><!-- container-fluid -->
 		</div><!-- portfolio -->
 		
-				
+		<!--================================
+		=            Contact Us            =
+		=================================-->
+		<div id="contact-us" class="contact">
+			<div class="contact__wrapper">
+			<div class="contact__paranja"></div>	
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-lg-offset-3">
+						<p class="contact__title title">Contact Us</p>
+						</div>
+					</div><!-- row -->
+					<!-- Forms -->
+					<div class="row">
+						<form action="mail.php" class="contact__form" method="POST">
+							<div class="col-md-6">
+								<div class="contact__input_wrapper">
+									<input type="text" class="contact__input" placeholder="Name" name="fullname" required>
+									<div class="contact__underline"></div>
+								</div>
+								<div class="contact__input_wrapper">
+									<input type="text" class="contact__input" placeholder="E-mail" name="email" required>
+									<div class="contact__underline"></div>
+								</div>
+								<div class="contact__input_wrapper">
+									<input type="text" class="contact__input" placeholder="Phone" name="web">
+									<div class="contact__underline"></div>
+								</div>
+							</div><!-- col-lg-6 -->
+							<div class="col-md-6">
+								<div class="contact__input_wrapper">
+									<textarea name="contact-massage" id="contact-textarea" cols="30" rows="10" class="contact__textarea" placeholder="Your Message" required></textarea>
+									<div class="contact__underline"></div>
+								</div>
+								<input type="submit" class="contact__submit" value="Send Massage">
+							</div><!-- col-lg-6 -->
+						</form>
+					</div><!-- row -->
+					<!-- Maps and Info-->
+					<div class="contact__info">
+						<div class="row">
+							<div class="col-md-7">
+								<iframe class="contact__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.630171344059!2d36.22331191594711!3d50.01828662629005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a12539ea59f3%3A0xb3935d05c00e694f!2z0L_RgNC-0YHQvy4g0J3QsNGD0LrQuCwgMjUsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1461434597327" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="col-md-5">
+								<div class="contact__logo logo clearfix">
+									<a href="#header" class="contact__logo logo__link">Outsource <span class="logo__link_color">Booster</span></a>
+								</div><!-- logo -->
+								<div class="contact__line"></div>
+								<div class="contact__adress">
+									<div class="contact__street street">
+										<p class="street__address">Nauki ave, 25</p>
+										<p class="street__address">Kharkiv</p>
+										<p class="street__address">Ukraine</p>
+									</div>
+									<div class="contact__phone phone">
+										<p class="phone__number" style="display: none;">+38 063 620 06 45</p>
+										<p class="phone__number" style="display: none;">+44(0) 207 581 8314</p>
+										<p class="phone__number_email">info@outsource-booster.com</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- container -->
+			</div><!-- contact__wrapper -->
+		</div><!-- contact -->
+
+		<!--============================
+		=            Footer            =
+		=============================-->
+		<div id="footer" class="footer">
+			<div class="footer__line"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 hidden-sm hidden-xs">
+						<div class="footer__wrapper">
+							<div class="footer__logo logo clearfix">
+								<a href="#header" class="footer__link logo__link">Outsource <span class="logo__link_color">Booster</span></a>
+							</div><!-- logo -->
+						</div><!-- footer__wrapper -->
+					</div><!-- col-lg-4 -->
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="footer__wrapper">
+							<ul class="footer__social social clearfix">
+								<li class="social__item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank" class="social__link  social__link_linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+								<li class="social__item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank" class="social__link  social__link_linkedin"><i class="fa fa-github" aria-hidden="true"></i></i></a></li>
+							</ul><!-- social__list -->
+						</div>
+					</div><!-- col-lg-4 -->
+					<div class="col-md-4 col-sm-6 col-xs-6">
+						<div class="footer__wrapper">
+							<div class="footer__copy copy">
+								<span class="copy__text">Copyright © 2016 <span class="copy__logo">Outsource Booster</span>. All rights reserved.</span>								
+							</div>
+						</div>
+					</div><!-- col-lg-4 -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</div><!-- footer -->
+
 	<!--====  End of Main Site  ====-->				
 	</div><!-- Main Site content -->
 		
@@ -243,14 +343,15 @@
 	=            SlideBars            =
 	================================-->
 	<div class="sb-slidebar sb-left sb-toggle-left slidebar">
-		<div class="slidebar__logo logo clearfix">
-			<a href="#header" class="navigation__link"><img src="img/logo.png" alt="Outsource-booster" class="logo__img"></a>
-		</div><!-- logo -->
+			<div class="slidebar__logo logo clearfix">
+					<a href="#header" class="slidebar__logo_link logo__link">Outsource <span class="slidebar__logo_padd logo__link_color">Booster</span></a>
+				</div><!-- logo -->
 		<ul class="slidebar__list">
 			<li class="slidebar__item"><a href="#about-us" class="slidebar__link">About us</a></li>
 			<li class="slidebar__item"><a href="#services" class="slidebar__link">Services</a></li>
 			<li class="slidebar__item"><a href="#skills" class="slidebar__link">Skills</a></li>
-			<li class="slidebar__item"><a href="#contact" class="slidebar__link">Contact</a></li>
+			<li class="slidebar__item"><a href="#portfolio" class="slidebar__link">Portfolio</a></li>
+			<li class="slidebar__item"><a href="#contact-us" class="slidebar__link">Contact</a></li>
 		</ul><!-- nav__list -->
 	</div>
 
@@ -259,5 +360,20 @@
 	=============================-->
 	<script src="scripts/plugins.min.js"></script>
 	<script src="scripts/main.min.js"></script>
+	<!--======================================
+	=            Google Analitics            =
+	=======================================-->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76868545-1', 'auto');
+  ga('send', 'pageview');
+  ga('set', 'userId', {{UA-76868545-1}});
+
+</script>
+	
 </body>
 </html>
