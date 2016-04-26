@@ -9,7 +9,8 @@
 	<meta charset="UTF-8">
 	<title>BoosterIT</title>
 
-	<meta name="description" content="">
+	<meta name="Keywords" content="java project, project from scratch, java developer, outstaffing, it developers, java, php, scala, c#, create application, outsourcing, consulting, q/a, cheap projects, experienced developers, developers rentals, programmers rentals, html, css, javascript, js, java script, groovy, clojure, database, nosql, agile, scrum">
+	<meta name="description" content="Booster IT provides full range of IT-related services across the world. We have established ourselves as a responsible partners on whom you can rely on.">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -61,7 +62,8 @@
 							<div class="header__content">
 								<div class="header__content_cell clearfix">
 									<p class="header__title">Trust us. We will boost your business.</p>
-									<a href="#about-us" class="header__btn"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+									<!-- popup button -->
+									<a href="" class="header__btn">We're hiring</a>					
 								</div><!-- header__content_cell -->
 							</div><!-- header__content -->
 						</div><!-- col-lg-12 -->
@@ -70,6 +72,35 @@
 			</div><!-- header__wrapper -->
 		</div><!-- header -->
 		
+		<!--===========================
+		=            Popup            =
+		============================-->		
+		<div class="popup">
+			<div class="popup__box"> 
+				<span class="popup__close"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+				<div class="popup__content">
+					<p class="popup__title">Sales manager</p>
+					<div class="popup__line"></div>
+					<div class="popup__text">
+						<p class="popup__text_title">Requirements:</p>						
+						<ul class="popup__list">
+							<li class="popup__item">At least 2 years of experience in IT sphere (Sales).</li>
+							<li class="popup__item">Knowledge of modern techniques in sales.</li>
+							<li class="popup__item">Presentation, negotiation experience.</li>
+							<li class="popup__item">Understanding the client's needs.</li>
+							<li class="popup__item">Ability to work in team.</li>
+						</ul>
+						<p class="popup__text_title">Responsibilities:</p>
+						<ul class="popup__list">
+							<li class="popup__item">Finding potential clients.</li>
+							<li class="popup__item">Marketing.</li>
+							<li class="popup__item">Creation of business-valuable presentations.</li>
+						</ul>	<!-- popup__list -->
+					</div><!-- popup__text -->
+				</div><!-- popup__content -->
+			</div><!-- popup__box -->
+			<div class="popup__paranja"></div>
+		</div>	
 		<!--==============================
 		=            About Us            =
 		===============================-->
@@ -277,7 +308,8 @@
 					<div class="contact__info">
 						<div class="row">
 							<div class="col-md-7">
-								<iframe class="contact__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.630171344059!2d36.22331191594711!3d50.01828662629005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a12539ea59f3%3A0xb3935d05c00e694f!2z0L_RgNC-0YHQvy4g0J3QsNGD0LrQuCwgMjUsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1461434597327" frameborder="0" allowfullscreen></iframe>
+								<!-- <iframe class="contact__maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.630171344059!2d36.22331191594711!3d50.01828662629005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a12539ea59f3%3A0xb3935d05c00e694f!2z0L_RgNC-0YHQvy4g0J3QsNGD0LrQuCwgMjUsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1461434597327" frameborder="0" allowfullscreen></iframe> -->
+								<div id="map" class="contact__maps"></div>
 							</div>
 							<div class="col-md-5">
 								<div class="contact__logo logo clearfix">
@@ -321,7 +353,7 @@
 						<div class="footer__wrapper">
 							<ul class="footer__social social clearfix">
 								<li class="social__item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank" class="social__link  social__link_linkedin"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-								<li class="social__item"><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home" target="_blank" class="social__link  social__link_linkedin"><i class="fa fa-github" aria-hidden="true"></i></i></a></li>
+								<li class="social__item"><a href="https://github.com/boosterit/" target="_blank" class="social__link  social__link_github"><i class="fa fa-github" aria-hidden="true"></i></i></a></li>
 							</ul><!-- social__list -->
 						</div>
 					</div><!-- col-lg-4 -->
@@ -359,6 +391,7 @@
 	=            Script            =
 	=============================-->
 	<script src="scripts/plugins.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="scripts/main.min.js"></script>
 	<!--======================================
 	=            Google Analitics            =
@@ -371,7 +404,7 @@
 
   ga('create', 'UA-76868545-1', 'auto');
   ga('send', 'pageview');
-  ga('set', 'userId', {{UA-76868545-1}});
+  ga('set', 'userId', {{UA-76868545-1}} );
 
 </script>
 	
